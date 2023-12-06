@@ -48,3 +48,23 @@ bk2 = Book(67,"ABC Kulturysty","Mariusz Pudzianowski",45)
 bk2.oprawa = "obwoluta"
 bk2.print_book()
 print(f'rabat od ceny {bk2.getcena()} zł wynosi: {bk2.rabat(11):.2f} zł')
+
+"""
+utworzenie klasy Encyklopedia z dziedziczeniem klasy Book
+"""
+
+class Empty:
+    pass
+
+class Encyklopedia(Book,Empty):
+
+    def __init__(self, id, tytul, autor, rodzaj, wydawca, cena=30):
+        super().__init__(id, tytul, autor, cena)
+        self.rodzaj = rodzaj
+        self.wydawca = wydawca
+
+print("*"*50)
+ec1 = Encyklopedia(56,"Encyklopedia informatyki","Jan Kot","techniczna","ABC",160)
+ec1.oprawa = "tekturowa"
+ec1.print_book()
+print(f'rabat od ceny {ec1.getcena()} zł wynosi: {ec1.rabat(5):.2f} zł')
