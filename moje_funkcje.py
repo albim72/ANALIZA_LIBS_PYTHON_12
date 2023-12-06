@@ -60,5 +60,14 @@ print(dziewiec)
 #zbuduj listę która będzie skałdała się z wartości całkowitych z przedziału [1,100000], każda z wartości
 #ma być kwadratem wartości z przedziału
 
-kwadraty = [i**2 for i in range(1,100001)]
+kwadraty = [i**2 for i in range(1,100001)] #list comprehension
 print(kwadraty)
+
+def generuj_liste(pot,min,max):
+    return [i**pot for i in range(min,max+1)]
+
+pt = generuj_liste(5,109,88900)
+print(pt)
+
+pt = generuj_liste(2,1,99)
+print(pt)
