@@ -31,3 +31,17 @@ def rank(*lang,nrrank,**inne):
 
 rank("Python","Java","C++","C#",nrrank=56)
 rank("Python","Java","C","C++","JavaScript","C#",nrrank=58)
+
+
+print((lambda g:g+11.5)(5))
+print((lambda g,h:g+11.5-h)(5,3.2))
+
+s = lambda a,b,z:(a*b+a*z)/(z-(a*b))
+
+print(s(3.3,4,2.89))
+
+def multi(n):
+    return lambda a:a*n
+
+print(multi(5)(9.9))
+
