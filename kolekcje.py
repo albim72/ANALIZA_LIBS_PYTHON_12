@@ -61,3 +61,46 @@ print(type(miasta))
 
 print(miasta[2:4])
 print(miasta.count("Kraków"))
+
+# cyfry.sort()
+print(sorted(cyfry))
+print(cyfry)
+
+print(sorted(miasta))
+print(miasta)
+miasta = sorted(miasta)
+print(miasta)
+print(type(miasta))
+
+miasta = tuple(miasta)
+print(miasta)
+
+#zbiór
+kolory = {"zielony","czerwony","niebieski","czarny","biały","brązowy","czerwony"}
+print(kolory)
+print(kolory)
+print(kolory)
+kolory.add("fioletowy")
+print(kolory)
+kolory.update(["magenta","cyan","żółty"])
+print(kolory)
+
+#słownik
+osoba = {
+    "imię":"Jan",
+    "nazwisko":"Kot",
+    "miasto":"Toruń",
+    "wiek":54,
+    222:45745,
+    3.44:True
+}
+
+print(osoba)
+print(osoba["miasto"])
+print(osoba[3.44])
+osoba["stanowisko"] = "Dyrektor"
+print(osoba)
+
+print(osoba.keys())
+print(osoba.values())
+print(osoba.items())
