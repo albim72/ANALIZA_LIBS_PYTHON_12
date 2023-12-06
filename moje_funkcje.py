@@ -24,3 +24,10 @@ print(wx(5,7,9,4))
 print(wx(5,7,4))
 print(wx(5,5))
 print(wx(3,7,c=51))
+
+def rank(*lang,nrrank,**inne):
+    print(f'ranking języków programowania nr {nrrank} -> miejsce pierwsze: {lang[0]}, '
+          f'drugie: {lang[1]}, trzecie: {lang[2]}')
+
+rank("Python","Java","C++","C#",nrrank=56)
+rank("Python","Java","C","C++","JavaScript","C#",nrrank=58)
