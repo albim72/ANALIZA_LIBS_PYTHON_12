@@ -45,3 +45,20 @@ def multi(n):
 
 print(multi(5)(9.9))
 
+num = [56,7,8,-33,52,5,0,-9,-21,45,90,111,-90,8,1,3]
+nbparz = list(filter(lambda x:x%2==0,num))
+print(nbparz)
+
+cube = list(map(lambda x:x**3,num))
+print(cube)
+
+def dodaj(x):
+    return x+9
+dziewiec = list(map(dodaj,num))
+print(dziewiec)
+
+#zbuduj listę która będzie skałdała się z wartości całkowitych z przedziału [1,100000], każda z wartości
+#ma być kwadratem wartości z przedziału
+
+kwadraty = [i**2 for i in range(1,100001)]
+print(kwadraty)
