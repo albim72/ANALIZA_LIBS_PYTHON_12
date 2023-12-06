@@ -71,3 +71,15 @@ print(pt)
 
 pt = generuj_liste(2,1,99)
 print(pt)
+
+#funkcja wyższego rzędu
+
+def witaj(imie):
+    return f'Miło Cię widzieć: {imie}'
+def konkurs(imie,punkty,zaliczono):
+    return f'Uczestnik konkursu: {imie}, punkty: {punkty}, zaliczono: {zaliczono}'
+def osoba(funkcja,*args):
+    return funkcja(*args)
+
+print(osoba(witaj,"Leon"))
+print(osoba(konkurs,"Olga",56,"tak"))
